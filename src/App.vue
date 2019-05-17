@@ -1,28 +1,53 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar is-info">
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <router-link class="navbar-item" to="/">
+            Home
+          </router-link>
+        </div>
+        <div class="navbar-end">
+          <router-link class="navbar-item" to="/customers">
+            Customers
+          </router-link>
+          <router-link class="navbar-item" to="/faq">
+            FAQ
+          </router-link>
+          <router-link class="navbar-item" to="/blog">
+            Blog Posts
+          </router-link>
+          <router-link class="navbar-item" to="/rss">
+            RSS, Atom &amp; Sitemap
+          </router-link>
+        </div>
+      </div>
+    </nav>
+  
+    <router-view/>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Tutorial</strong> by <a href="https://bryanrankin.com">Bryan Rankin</a>.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app'
   }
-}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  footer.footer {
+    margin-top: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+  }
 </style>
