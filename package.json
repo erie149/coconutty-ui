@@ -1,8 +1,8 @@
 {
-  "name": "buttercms-project",
+  "name": "coconutty-ui",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Bryan Rankin <bryan@bryanrankin.com>",
+  "author": "erie149@gmail.com",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "buttercms": "^1.1.0",
+    "buttercms": "^1.1.4",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -47,8 +47,8 @@
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
-    "webpack-bundle-analyzer": ">=3.1.11",
-    "webpack-dev-server": ">3.1.11",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
