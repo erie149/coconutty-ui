@@ -26,15 +26,6 @@
   
     <router-view/>
   
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Tutorial</strong> by <a href="https://bryanrankin.com">Bryan Rankin</a>.
-          </p>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
