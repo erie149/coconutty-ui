@@ -33,6 +33,7 @@
             // console.log(res.data)
             this.post = res.data
           }).catch((res) => {
+            // eslint-disable-next-line no-console
             console.log(res)
           })
       }
