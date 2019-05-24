@@ -39,7 +39,7 @@
       }
     },
     watch: {
-      $route() {
+      $route(n) {
         this.getPost()
       }
     },
