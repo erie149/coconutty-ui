@@ -56,7 +56,9 @@
       getCategories() {
         butter.category.list()
           .then((res) => {
+            // eslint-disable-next-line no-console
             console.log('List of Categories:')
+            // eslint-disable-next-line no-console
             console.log(res.data.data)
           })
       },
@@ -65,7 +67,9 @@
             include: 'recent_posts'
           })
           .then((res) => {
+            // eslint-disable-next-line no-console
             console.log('Posts with specific category:')
+            // eslint-disable-next-line no-console
             console.log(res)
           })
       }

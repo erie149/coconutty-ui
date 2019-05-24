@@ -29,9 +29,11 @@
       getPage() {
         butter.page.retrieve('customer_case_study', this.slug)
           .then((res) => {
+            // eslint-disable-next-line no-console
             console.log(res.data.data)
             this.page = res.data.data
           }).catch((res) => {
+            // eslint-disable-next-line no-console
             console.log(res)
           })
       }

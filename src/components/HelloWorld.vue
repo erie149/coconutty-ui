@@ -38,7 +38,9 @@
       fetchHeadline() {
         butter.content.retrieve(['homepage_headline'])
           .then((res) => {
+            // eslint-disable-next-line no-console
             console.log('Headline from ButterCMS')
+            // eslint-disable-next-line no-console
             console.log(res)
           })
       },
@@ -48,7 +50,9 @@
             page_size: 10
           })
           .then((res) => {
+            // eslint-disable-next-line no-console
             console.log('Content from ButterCMS')
+            // eslint-disable-next-line no-console
             console.log(res)
           })
       }
