@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-
-     <md-toolbar class="md-primary">
-      
+    <md-toolbar class="md-primary">
       <div class="md-toolbar-row">
         <div class="md-toolbar-section-start">
           <md-button class="md-icon-button">
@@ -24,20 +22,20 @@
     </md-toolbar>
     <md-content>
       
-          <div>
-    <blogHome></blogHome>
-  </div>  
+          <blogHome></blogHome>
+         
     </md-content>
   </div>
 </template>
 
 <script>
-import BlogHome from './components/BlogHome.vue'
-  export default {
-    
-    components: {
-      'blogHome': BlogHome
-    }
+import BlogHome from "./components/BlogHome.vue";
+import BlogPost from "./components/BlogPost.vue";
+export default {
+  components: {
+    blogHome: BlogHome,
+    blogPost: BlogPost
   }
+};
 </script>
 

@@ -38,11 +38,6 @@
           })
       }
     },
-    watch: {
-      $route(n) {
-        this.getPost()
-      }
-    },
     created() {
       this.getPost()
     }
