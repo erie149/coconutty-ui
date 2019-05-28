@@ -330,4 +330,4 @@ ASALocalRun/
 .mfractor/
 
 config/configprops
-buttercms.js
+src/buttercms.js
