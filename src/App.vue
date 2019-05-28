@@ -24,16 +24,20 @@
     </md-toolbar>
     <md-content>
       
-          <router-link to="/">
-            Home
-      </router-link>
+          <div>
+    <blogHome></blogHome>
+  </div>  
     </md-content>
   </div>
 </template>
 
 <script>
+import BlogHome from './components/BlogHome.vue'
   export default {
-    name: 'app'
+    
+    components: {
+      'blogHome': BlogHome
+    }
   }
 </script>
 
