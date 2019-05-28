@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <nav class="navbar is-info">
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <router-link class="navbar-item" to="/">
-            Home
-          </router-link>
+    <md-toolbar class="md-primary">
+      <div class="md-toolbar-row">
+        <div class="md-toolbar-section-start">
+          <md-button class="md-icon-button">
+            <md-icon>menu</md-icon>
+          </md-button>
+          <h3 class="md-title" style="flex: 1">CocoNutty Blog</h3>
         </div>
+<<<<<<< HEAD
         <div class="navbar-end">
           <router-link class="navbar-item" to="/customers">
             Customers
@@ -26,19 +28,28 @@
   
     <router-view/>
   
+=======
+
+        <div class="md-toolbar-section-end">
+          <md-button class="md-icon-button">
+            <md-icon>refresh</md-icon>
+          </md-button>
+
+          <md-button class="md-icon-button">
+            <md-icon>more_vert</md-icon>
+          </md-button>
+        </div>
+      </div>
+    </md-toolbar>
+    <md-content>
+         <router-view />
+    </md-content>
+>>>>>>> correctpackage
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'app'
-  }
+export default {
+}
 </script>
 
-<style>
-  footer.footer {
-    margin-top: 10rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem
-  }
-</style>

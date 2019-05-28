@@ -1,20 +1,24 @@
 {
-  "name": "coconutty-ui",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "erie149@gmail.com",
+  "name": "cms-ui",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "build": "node build/build.js"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mdi/font": "^3.6.95",
     "buttercms": "^1.1.4",
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "core-js": "^2.6.5",
+    "css-loader": "^2.1.1",
+    "material-design-icons-iconfont": "^5.0.1",
+    "vue": "^2.6.10",
+    "vue-material": "^1.0.0-beta-11",
+    "vue-router": "^3.0.6"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -50,14 +54,37 @@
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
+=======
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+>>>>>>> correctpackage
   },
-  "engines": {
-    "node": ">= 6.0.0",
-    "npm": ">= 3.0.0"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
+    "last 2 versions"
   ]
 }

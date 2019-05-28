@@ -28,6 +28,7 @@
       getFaqs() {
         butter.content.retrieve(['faq_headline', 'faq_items'])
           .then((res) => {
+            // eslint-disable-next-line no-console
             console.log(res.data.data)
             this.page_title = res.data.data.faq_headline
             this.faq_items = res.data.data.faq_items
