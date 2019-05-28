@@ -21,21 +21,13 @@
       </div>
     </md-toolbar>
     <md-content>
-      
-          <blogHome></blogHome>
-         
+         <router-view />
     </md-content>
   </div>
 </template>
 
 <script>
-import BlogHome from "./components/BlogHome.vue";
-import BlogPost from "./components/BlogPost.vue";
 export default {
-  components: {
-    blogHome: BlogHome,
-    blogPost: BlogPost
-  }
-};
+}
 </script>
 

@@ -25,6 +25,7 @@
   </div>-->
 <div class="container">
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
+      <router-link :to="'/blog/' + post.slug">
       <md-card>
         <md-card-header>
           <md-card-header-text>
@@ -39,11 +40,9 @@
           <p>{{ post.summary }}</p>
         </md-card-content>
 
-        <md-card-actions>
-          <md-button :href="pageUrl('/blog/', post.slug)">Post</md-button>
-          <!--<router-link :to="'/blog/' + post.slug">-->
-        </md-card-actions>
       </md-card>
+      </router-link>
+
     </div>
 </div>
 </template>
@@ -51,7 +50,7 @@
 <script>
 import { butter } from "@/buttercms";
 export default {
-  name: "blog-home",
+  name: "blog-list",
   data() {
     return {
       page_title: "Blog",
