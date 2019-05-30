@@ -8,28 +8,6 @@
           </md-button>
           <h3 class="md-title" style="flex: 1">CocoNutty Blog</h3>
         </div>
-<<<<<<< HEAD
-        <div class="navbar-end">
-          <router-link class="navbar-item" to="/customers">
-            Customers
-          </router-link>
-          <router-link class="navbar-item" to="/faq">
-            FAQ
-          </router-link>
-          <router-link class="navbar-item" to="/blog">
-            Blog Posts
-          </router-link>
-          <router-link class="navbar-item" to="/rss">
-            RSS, Atom &amp; Sitemap
-          </router-link>
-        </div>
-      </div>
-    </nav>
-  
-    <router-view/>
-  
-=======
-
         <div class="md-toolbar-section-end">
           <md-button class="md-icon-button">
             <md-icon>refresh</md-icon>
@@ -44,7 +22,6 @@
     <md-content>
          <router-view />
     </md-content>
->>>>>>> correctpackage
   </div>
 </template>
 
