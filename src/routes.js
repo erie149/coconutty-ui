@@ -1,4 +1,3 @@
-
 import Home from "./components/Home.vue";
 import BlogPost from "./components/BlogPost.vue";
 import BlogList from "./components/BlogList.vue";

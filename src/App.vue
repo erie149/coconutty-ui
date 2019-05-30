@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <md-toolbar class="md-transparent">
       <div class="md-toolbar-row">
         <div class="md-toolbar-section-start">
