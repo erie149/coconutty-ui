@@ -1,9 +1,9 @@
 
-import BlogList from "./components/BlogList.vue";
+import Home from "./components/Home.vue";
 import BlogPost from "./components/BlogPost.vue";
 
 const routes = [
-   {path: '/', component: BlogList},
+   {path: '/', component: Home},
    {path: '/blog/:slug', component: BlogPost}
 
 ];
