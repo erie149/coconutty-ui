@@ -1,6 +1,6 @@
 <template>
-  <div class="section" id="blog-post">
-    <div class="container center">
+  <div id="blog-post">
+    <div>
       <!--<div class="has-text-centered">
         <router-link v-if="post.meta.previous_post" :to="/blog/ + post.meta.previous_post.slug" class="button">
           {{ post.meta.previous_post.title }}
@@ -10,7 +10,7 @@
         </router-link>
       </div>
       <hr>-->
-      <h1 class="is-size-2">{{ post.data.title }}</h1>
+      <h1>{{ post.data.title }}</h1>
       <h4>{{ post.data.author.first_name }} {{ post.data.author.last_name }}</h4>
       <div class="content" v-html="post.data.body"></div>
     </div>

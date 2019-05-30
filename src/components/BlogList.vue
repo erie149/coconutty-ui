@@ -23,7 +23,7 @@
                 </div>
               </article>
   </div>-->
-<div class="container">
+<div>
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
       <router-link :to="'/blog/' + post.slug">
       <md-card>
