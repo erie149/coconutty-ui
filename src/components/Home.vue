@@ -1,17 +1,22 @@
 <template>
-<div class="home-center-container">
-    <div class="home-center">
-        <md-content>Coconutty</md-content>
-    </div>
-    <div class="home-center">
-        <md-field>
-            <md-input></md-input>
-        </md-field>
+
+<v-content>
+    
+    <v-layout align-center pt-5>
+        <v-flex xs12 sm4 text-xs-center/>
+            
+       <v-flex xs12 sm4 text-xs-center>
+          <v-text-field
+            label="Find Your Post"
+            outline
+          ></v-text-field>
+        
         <router-link :to="'/blogs'">
-            <md-button>Search</md-button>
+            <v-btn color="grey lighten-4">Search</v-btn>
         </router-link>
-    </div>
-</div>
+                </v-flex>
+            </v-layout>
+    </v-content>
 </template>
 
 <script>
@@ -23,7 +28,7 @@ export default {
 <style>
 .home-center-container {
     text-align: center;
-    max-width: 500px;
+    max-width: 300px;
     margin: auto;
     padding: 200px 0;
 }

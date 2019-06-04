@@ -1,17 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import VueMaterial from 'vue-material'
 import routes from './routes'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/default.css'
-import 'material-design-icons-iconfont/dist/material-design-icons.css'
-import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/dist/vuetify.min.css'
+import Vuetify from 'vuetify'
 
 Vue.config.productionTip = false
-Vue.use(VueMaterial)
 Vue.use(VueRouter)
-
+Vue.use(Vuetify)
 const router = new VueRouter({routes});
 
 /* eslint-disable no-new */

@@ -1,50 +1,20 @@
 <template>
-  <!-- <div id="blog-home" class="section">
-    <div class="container">
-      <div class="columns is-multiline">
-        <div
-          class="column is-one-third"
-          v-for="(post,index) in posts"
-          :key="post.slug + '_' + index"
-        >
-          <div class="box">
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-64x64">
-                    <img v-if="post.featured_image" :src="post.featured_image" alt="">
-                    <img v-else src="http://via.placeholder.com/250x250" alt="">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <h2 class="title is-5">{{ post.title }}</h2>
-                    <p>{{ post.summary }}</p>
-                  </div>
-                </div>
-              </article>
-  </div>-->
-<div>
+ 
+<v-content>
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
-      <router-link :to="'/blog/' + post.slug">
-      <md-card>
-        <md-card-header>
-          <md-card-header-text>
-            <div class="md-title">{{ post.title }}</div>
-          </md-card-header-text>
-          <md-card-media>
-            <img v-if="post.featured_image" :src="post.featured_image" alt>
-            <img v-else src="http://via.placeholder.com/250x250" alt>
-          </md-card-media>
-        </md-card-header>
-        <md-card-content>
-          <p>{{ post.summary }}</p>
-        </md-card-content>
-
-      </md-card>
+      <router-link :to="'/blogs/' + post.slug">
+      <v-card>
+          <v-card-title primary-title>
+          <div>
+            <h3 class="headline mb-0">{{ post.title }}</h3>
+            <div> {{ post.summary }} </div>
+          </div>
+        </v-card-title>
+      </v-card>
       </router-link>
 
     </div>
-</div>
+</v-content>
 </template>
   
 <script>
@@ -63,7 +33,7 @@ export default {
       // eslint-disable-next-line no-console
         console.log("" + id);
         
-      return '/blog/' + id
+      return '/blogs/' + id
     },
     getPosts() {
       butter.post
